@@ -1,0 +1,461 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+
+    background: #f7f7f7;
+    color: #3c3c3c;
+}
+
+#app {
+    width: min(90%, 700px);
+    margin: 0 auto;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* TÍTULO */
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    color: #2196f3;
+    font-weight: 800;
+}
+
+/* CONTADOR */
+
+#contador {
+    font-size: 18px;
+    color: #777777;
+    margin-bottom: 45px;
+    font-weight: bold;
+}
+
+/* TARJETA DE LA FRASE */
+
+#frase {
+    background: white;
+    padding: 35px 25px;
+
+    border-radius: 20px;
+
+    border: 2px solid #e5e5e5;
+
+    box-shadow: 0 4px 0 #e5e5e5;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+/* PALABRAS */
+
+#frase button {
+    padding: 14px 20px;
+
+    font-size: 19px;
+    font-weight: bold;
+
+    background: white;
+    color: #3c3c3c;
+
+    border: 2px solid #d7d7d7;
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    box-shadow: 0 3px 0 #d7d7d7;
+
+    transition: 0.15s;
+}
+
+/* CUANDO PASAS EL RATÓN */
+
+#frase button:hover {
+    background: #f1f8ed;
+    border-color: #2196f3;
+
+    transform: translateY(-2px);
+}
+
+/* CUANDO PRESIONAS */
+
+#frase button:active {
+    transform: translateY(2px);
+    box-shadow: 0 1px 0 #d7d7d7;
+}
+
+/* TRADUCCIÓN */
+
+#traduccion {
+    min-height: 45px;
+
+    margin-top: 30px;
+
+    font-size: 26px;
+    font-weight: bold;
+
+    color: #2196f3;
+}
+
+/* BOTÓN SIGUIENTE */
+
+#siguiente {
+    margin-top: 25px;
+
+    padding: 15px 30px;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    border: none;
+    border-radius: 12px;
+
+    background: #2196f3;
+    color: white;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 0 #1976d2;
+
+    transition: 0.15s;
+}
+
+/* HOVER */
+
+#siguiente:hover {
+    background: #42a5f5;
+}
+
+/* CLICK */
+
+#siguiente:active {
+    transform: translateY(3px);
+    box-shadow: 0 1px 0 #1976d2;
+}
+#escuchar {
+    margin-left: 10px;
+
+    border: none;
+    background: transparent;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    transition: 0.15s;
+}
+
+#escuchar:hover {
+    transform: scale(1.15);
+}
+
+#escuchar:active {
+    transform: scale(0.9);
+}
+/* PANTALLA DE INICIO */
+
+.inicio {
+    padding-top: 40px;
+}
+
+.logo {
+    font-size: 45px;
+    margin-bottom: 5px;
+}
+
+.subtitulo {
+    font-size: 20px;
+    color: #777777;
+    margin-bottom: 45px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: min(100%, 400px);
+    margin: 0 auto;
+}
+
+.menu-boton {
+    width: 100%;
+    padding: 18px;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    border-radius: 15px;
+    cursor: pointer;
+
+    transition: 0.15s;
+}
+
+.aprender {
+    background: #2196f3;
+    color: white;
+
+    border: 2px solid #1976d2;
+    box-shadow: 0 5px 0 #1976d2;
+}
+
+.aprender:hover {
+    background: #42a5f5;
+    transform: translateY(-2px);
+}
+
+.practicar {
+    background: white;
+    color: #3c3c3c;
+
+    border: 2px solid #e5e5e5;
+    box-shadow: 0 5px 0 #d7d7d7;
+}
+
+.practicar:hover {
+    border-color: #2196f3;
+    transform: translateY(-2px);
+}
+
+.menu-boton:active {
+    transform: translateY(3px);
+    box-shadow: 0 1px 0 #d7d7d7;
+}
+
+/* BOTÓN VOLVER */
+
+#inicio {
+    margin-top: 20px;
+
+    background: transparent;
+    color: #777777;
+
+    border: none;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+#inicio:hover {
+    color: #2196f3;
+}
+/* MODO PRACTICAR */
+
+.practicar-pantalla {
+    padding-top: 20px;
+}
+
+.instruccion {
+    font-size: 18px;
+    color: #777777;
+    margin-bottom: 35px;
+}
+
+.pregunta {
+    background: white;
+
+    padding: 30px 20px;
+
+    border-radius: 20px;
+
+    border: 2px solid #e5e5e5;
+
+    box-shadow: 0 4px 0 #e5e5e5;
+
+    margin-bottom: 25px;
+}
+
+.pregunta p {
+    margin: 0;
+
+    font-size: 27px;
+    font-weight: bold;
+
+    color: #3c3c3c;
+}
+
+#opciones {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+
+    width: min(100%, 500px);
+
+    margin: 0 auto;
+}
+
+.opcion {
+    width: 100%;
+
+    padding: 16px;
+
+    background: white;
+
+    border: 2px solid #d7d7d7;
+    border-radius: 12px;
+
+    box-shadow: 0 3px 0 #d7d7d7;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    color: #3c3c3c;
+
+    cursor: pointer;
+
+    transition: 0.15s;
+}
+
+.opcion:hover {
+    border-color: #2196f3;
+    background: #f1f8ed;
+
+    transform: translateY(-2px);
+}
+
+.opcion:active {
+    transform: translateY(2px);
+    box-shadow: 0 1px 0 #d7d7d7;
+}
+
+.opcion.correcta {
+    border-color: #2196f3;
+    background: #e3f2fd;
+}
+
+.opcion.incorrecta {
+    border-color: #d7d7d7;
+    background: #f7f7f7;
+}
+
+#resultado {
+    min-height: 30px;
+
+    margin-top: 25px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    color: #2196f3;
+}
+/* BOTÓN SIGUIENTE PREGUNTA */
+
+#siguiente-pregunta {
+    margin-top: 25px;
+
+    padding: 15px 30px;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    border: none;
+    border-radius: 12px;
+
+    background: #2196f3;
+    color: white;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 0 #1976d2;
+
+    transition: 0.15s;
+}
+
+/* HOVER */
+
+#siguiente-pregunta:hover {
+    background: #42a5f5;
+
+    transform: translateY(-2px);
+}
+
+/* CLICK */
+
+#siguiente-pregunta:active {
+    transform: translateY(3px);
+
+    box-shadow: 0 1px 0 #1976d2;
+}
+/* PANTALLA FINAL */
+
+.final {
+    padding-top: 40px;
+}
+
+.final-icono {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.final h1 {
+    margin-bottom: 15px;
+}
+
+.final-mensaje {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3c3c3c;
+}
+
+.final-aprendizaje {
+    font-size: 17px;
+    color: #777777;
+
+    max-width: 450px;
+    margin: 15px auto 35px;
+}
+
+.final-botones {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+
+    width: min(100%, 400px);
+    margin: 0 auto;
+}
+
+#practicar-otra-vez {
+    width: 100%;
+
+    padding: 16px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    border: none;
+    border-radius: 12px;
+
+    background: #2196f3;
+    color: white;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 0 #1976d2;
+
+    transition: 0.15s;
+}
+
+#practicar-otra-vez:hover {
+    background: #42a5f5;
+
+    transform: translateY(-2px);
+}
+
+#practicar-otra-vez:active {
+    transform: translateY(3px);
+
+    box-shadow: 0 1px 0 #1976d2;
+}
+
+.final #inicio {
+    margin-top: 5px;
+}
